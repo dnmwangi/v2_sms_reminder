@@ -4,7 +4,7 @@ RUN apk update
 
 RUN apk add git
 
-RUN git clone https://github.com/dnmwangi/sms_reminder.git
+RUN git clone https://github.com/dnmwangi/v2_sms_reminder.git
 
 WORKDIR /sms_reminder
 
