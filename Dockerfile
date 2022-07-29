@@ -12,4 +12,8 @@ RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
-CMD [start_service.sh]
+COPY ./start_service.sh /
+
+RUN chmod +x /start_service.sh
+
+ENTRYPOINT ["/start_service.sh"]
